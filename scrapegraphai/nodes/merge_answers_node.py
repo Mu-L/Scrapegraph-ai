@@ -2,19 +2,12 @@
 MergeAnswersNode Module
 """
 
-# Imports from standard library
 from typing import List, Optional
-from tqdm import tqdm
-
-# Imports from Langchain
 from langchain.prompts import PromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
-from tqdm import tqdm
-
 from ..utils.logging import get_logger
-
-# Imports from the library
 from .base_node import BaseNode
+from ..helpers import template_combined
 
 
 class MergeAnswersNode(BaseNode):
@@ -87,18 +80,8 @@ class MergeAnswersNode(BaseNode):
 
         format_instructions = output_parser.get_format_instructions()
 
-        template_merge = """
-        You are a website scraper and you have just scraped some content from multiple websites.\n
-        You are now asked to provide an answer to a USER PROMPT based on the content you have scraped.\n
-        You need to merge the content from the different websites into a single answer without repetitions (if there are any). \n
-        The scraped contents are in a JSON format and you need to merge them based on the context and providing a correct JSON structure.\n
-        OUTPUT INSTRUCTIONS: {format_instructions}\n
-        USER PROMPT: {user_prompt}\n
-        WEBSITE CONTENT: {website_content}
-        """
-
         prompt_template = PromptTemplate(
-            template=template_merge,
+            template=template_combined,
             input_variables=["user_prompt"],
             partial_variables={
                 "format_instructions": format_instructions,

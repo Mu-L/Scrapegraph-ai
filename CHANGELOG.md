@@ -1,30 +1,256 @@
-## [1.11.3](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.11.2...v1.11.3) (2024-07-25)
+## [1.13.0-beta.7](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.13.0-beta.6...v1.13.0-beta.7) (2024-08-09)
 
 
 ### Bug Fixes
 
-* add llama 3.1 ([f872bdd](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/f872bdd24f9874660eea04f9ade570c96b6e7e93))
+* generate answer node omni ([b52e4a3](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/b52e4a390bb23ca55922e47046db558e1969a047))
+* generate answer node pdf has a bug ([625ca9f](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/625ca9f22a91a292a844ddb45e0edc767bf24711))
 
 
-### Docs
+### CI
 
-* prev version ([5c08eea](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/5c08eea189d7ede6f29399a67d897aa3b3f6a7b0))
+* **release:** 1.12.1 [skip ci] ([928f704](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/928f7040ab1ef3a87f1cbad599b888940fa835c4))
+* **release:** 1.12.2 [skip ci] ([ece605e](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/ece605e3ee0aa110501f6642eb687831a4d0660b))
 
-## [1.11.2](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.11.1...v1.11.2) (2024-07-23)
+## [1.12.2](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.12.1...v1.12.2) (2024-08-07)
 
-
-### Bug Fixes
-
-* md conversion ([1d41f6e](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/1d41f6eafe8ed0e191bb6a258d54c6388ff283c6))
-
-## [1.11.1](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.11.0...v1.11.1) (2024-07-23)
 
 
 ### Bug Fixes
 
-* md conversion ([5a45e9f](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/5a45e9f2d86a1c58b8ea321e3df9718bc00f9c28))
+* generate answer node omni ([b52e4a3](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/b52e4a390bb23ca55922e47046db558e1969a047))
 
-## [1.11.0](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.10.4...v1.11.0) (2024-07-23)
+## [1.12.1](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.12.0...v1.12.1) (2024-08-07)
+
+* **FetchNode:** missing bracket syntax error ([50edbcc](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/50edbcc7f80e419f72f3f69249fec4a37597ef9a))
+
+## [1.13.0-beta.5](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.13.0-beta.4...v1.13.0-beta.5) (2024-08-08)
+
+
+### Bug Fixes
+
+* generate answer node pdf has a bug ([625ca9f](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/625ca9f22a91a292a844ddb45e0edc767bf24711))
+
+* **chunking:** count tokens from words instead of characters ([5ec2de9](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/5ec2de9e1a14def5596738b6cdf769f5039a246d)), closes [#513](https://github.com/ScrapeGraphAI/Scrapegraph-ai/issues/513)
+
+## [1.13.0-beta.4](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.13.0-beta.3...v1.13.0-beta.4) (2024-08-07)
+
+
+### Bug Fixes
+
+* refactoring of merge_answer_node ([898e5a7](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/898e5a7af504fbf4c1cabb14103e66184037de49))
+
+## [1.13.0-beta.3](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.13.0-beta.2...v1.13.0-beta.3) (2024-08-07)
+
+
+### Features
+
+* add mistral support ([17f2707](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/17f2707313f65a1e96443b3c8a1f5137892f2c5a))
+
+
+### Bug Fixes
+
+* **FetchNode:** handling of missing browser_base key ([07720b6](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/07720b6e0ca10ba6ce3c1359706a09baffcc4ad0))
+* **AbstractGraph:** LangChain warnings handling, Mistral tokens ([786af99](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/786af992f8fbdadfdc3d2d6a06c0cfd81289f8f2))
+
+
+### chore
+
+* **models_tokens:** add mistral models ([5e82432](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/5e824327c3acb69d53f3519344d0f8c2e3defa8b))
+* **mistral:** create examples ([f8ad616](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/f8ad616e10c271443e2dcb4123c8ddb91de2ff69))
+* **examples:** fix Mistral examples ([b0ffc51](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/b0ffc51e5415caec562a565710f5195afe1fbcb2))
+* update requirements for mistral ([9868555](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/986855512319541d1d02356df9ad61ab7fc5d807))
+
+## [1.13.0-beta.2](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.13.0-beta.1...v1.13.0-beta.2) (2024-08-07)
+
+
+### Bug Fixes
+
+* refactoring of fetch_node ([29ad140](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/29ad140fa399e9cdd98289a70506269db25fb599))
+* refactoring of fetch_node adding comment ([bfc6852](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/bfc6852b77b643e34543f7e436349f73d4ba1b5a))
+* refactoring of fetch_node qixed error ([1ea2ad8](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/1ea2ad8e79e9777c60f86565ed4930ee46e1ca53))
+
+## [1.13.0-beta.1](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.12.0...v1.13.0-beta.1) (2024-08-06)
+
+
+### Features
+
+* add grok integration ([fa651d4](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/fa651d4cd9ab8ae9cf58280f1256ceb4171ef088))
+* update base_graph ([0571b6d](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/0571b6da55920bfe691feef2e1ecb5f3760dabf7))
+
+
+### CI
+
+* **release:** 1.11.0-beta.11 [skip ci] ([579d3f3](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/579d3f394b54636673baf8e9f619f1c57a2ecce4))
+* **release:** 1.11.0-beta.12 [skip ci] ([cf2a17e](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/cf2a17ed5d79c62271fd9ea8ec89793884b04b56))
+
+
+## [1.12.0](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.11.3...v1.12.0) (2024-08-06)
+
+
+### Features
+
+* add generate_answer node paralellization ([0c4b290](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/0c4b2908d98efbb2b0a6faf68618a801d726bb5f))
+* add integration in the abstract grapgh ([5ecdbe7](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/5ecdbe715f4bb223fa1be834fda07ccea2a51cb9))
+* fix tests ([1db164e](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/1db164e9e682eefbc1414989a043fefa2e9009c2))
+* intregration of firebase ([4caed54](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/4caed545e5030460b2d5e46f9ad90546ce36f0ee))
+* pdate models_tokens.py ([377d679](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/377d679eecd62611c0c9a3cba8202c6f0719ed31))
+* refactoring of the code ([9355507](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/9355507a2dc73342f325b6649e871df48ae13567))
+
+
+### Bug Fixes
+
+* abstract_graph and removed unused embeddings ([0b4cfd6](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/0b4cfd6522dcad0eb418f0badd0f7824a1efd534))
+* add llama 3.1 ([f336c95](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/f336c95c2d1833d1f829d61ae7fa415ac2caf250))
+* fixed bug on fetch_node ([968c69e](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/968c69e217d9c180b9b8c2aa52ca59b9a1733525))
+* **AbstractGraph:** instantiation of Azure GPT models ([ade28fc](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/ade28fca2c3fdf40f28a80854e3b8435a52a6930)), closes [#498](https://github.com/ScrapeGraphAI/Scrapegraph-ai/issues/498)
+* pyproject.toml ([e90fad4](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/e90fad44ce53e34a73270619255cc392eed81a06))
+* rebuild pyproject, requirements and lockfiles ([1193984](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/1193984434dea0ad70ff6b975ac778d56d2e1688))
+
+
+### chore
+
+* rebuild requirements ([2edad66](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/2edad66788cbd92f197e3b37db13c44bfa39e36a))
+* remove unused import ([88710f1](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/88710f1a7c7d50f57108456112da30d1a12a1ba1))
+* set dependency version for vertexai ([971cc2d](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/971cc2da04e331ebca1f93048c78bc58b452d30a))
+* update pyproject, rebuild lockfiles ([d6312bf](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/d6312bfc9b2d68370727645b1ce5010ff7a626c0))
+
+
+### Refactor
+
+* **Ollama:** integrate new LangChain chat init ([d177afb](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/d177afb68be036465ede1f567d2562b145d77d36))
+* **OpenAI:** integrate new LangChain chat init ([5e3eb6e](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/5e3eb6e43df4bd4c452d34b49f254235e9ff1b22))
+* move embeddings code from AbstractGraph to RAGNode ([a94ebcd](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/a94ebcde0078d66d33e67f7e0a87850efb92d408))
+* remove LangChain wrappers ([2c5f934](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/2c5f934f101e319ec4e61009d4c464ca4626c1ff))
+* remove LangChain wrappers for Ollama ([25066b2](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/25066b2bc51517e50058231664230b8edef365b9))
+* remove redundant LangChain wrappers ([9275486](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/927548624034b3c30eca60011d216720102d1815))
+* remove redundant wrappers for Ernie and Nvidia ([bc2c996](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/bc2c9967d2f13ade6eeb7b23e9b423f6e79aa890))
+* reuse code for common interface models ([bb73d91](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/bb73d916a1a7b378438038ec928eeda6d8f6ac9d))
+
+
+### CI
+
+* **release:** 1.11.0-beta.1 [skip ci] ([7080a0a](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/7080a0afd527a34ada33ee2d3ace8e724d879df7))
+* **release:** 1.11.0-beta.10 [skip ci] ([ee30a83](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/ee30a83f8a77958be6881ca0a94b02d278f37a61)), closes [#498](https://github.com/ScrapeGraphAI/Scrapegraph-ai/issues/498)
+* **release:** 1.11.0-beta.2 [skip ci] ([bf6d487](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/bf6d487bbb26187b32f5985433b54025f6437af5))
+* **release:** 1.11.0-beta.3 [skip ci] ([66f9421](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/66f9421fc216f0984d5a393101d1c109b08eaa33))
+* **release:** 1.11.0-beta.4 [skip ci] ([51db43a](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/51db43a129ef05c050b6de017598a664119594ba))
+* **release:** 1.11.0-beta.5 [skip ci] ([b15fd9f](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/b15fd9f4dc3643c9904a2cbaa5f392a6805c9762))
+* **release:** 1.11.0-beta.6 [skip ci] ([74ed8d0](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/74ed8d06c5db4f9734521c2f84f4379b18b7308f))
+* **release:** 1.11.0-beta.7 [skip ci] ([55f706f](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/55f706f3d5f4a8afe9dd8fc9ce9bd527f8a11894))
+* **release:** 1.11.0-beta.8 [skip ci] ([3e07f62](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/3e07f6273fae667b2f663be1cdd5e9c068f4c59f))
+* **release:** 1.11.0-beta.9 [skip ci] ([4440790](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/4440790f00c1ddd416add7af895756ab42c30bf3))
+
+
+## [1.11.0-beta.12](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.11.0-beta.11...v1.11.0-beta.12) (2024-08-06)
+
+
+### Features
+
+* add grok integration ([fa651d4](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/fa651d4cd9ab8ae9cf58280f1256ceb4171ef088))
+
+## [1.11.0-beta.11](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.11.0-beta.10...v1.11.0-beta.11) (2024-08-06)
+
+
+### Features
+
+* update base_graph ([0571b6d](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/0571b6da55920bfe691feef2e1ecb5f3760dabf7))
+
+## [1.11.0-beta.10](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.11.0-beta.9...v1.11.0-beta.10) (2024-08-02)
+
+
+### Bug Fixes
+
+* **AbstractGraph:** instantiation of Azure GPT models ([ade28fc](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/ade28fca2c3fdf40f28a80854e3b8435a52a6930)), closes [#498](https://github.com/ScrapeGraphAI/Scrapegraph-ai/issues/498)
+
+## [1.11.0-beta.9](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.11.0-beta.8...v1.11.0-beta.9) (2024-08-02)
+
+
+### Features
+
+* refactoring of the code ([9355507](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/9355507a2dc73342f325b6649e871df48ae13567))
+
+## [1.11.0-beta.8](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.11.0-beta.7...v1.11.0-beta.8) (2024-08-01)
+
+
+### Features
+
+* add integration in the abstract grapgh ([5ecdbe7](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/5ecdbe715f4bb223fa1be834fda07ccea2a51cb9))
+
+
+### Bug Fixes
+
+* fixed bug on fetch_node ([968c69e](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/968c69e217d9c180b9b8c2aa52ca59b9a1733525))
+
+## [1.11.0-beta.7](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.11.0-beta.6...v1.11.0-beta.7) (2024-08-01)
+
+
+### Bug Fixes
+
+* abstract_graph and removed unused embeddings ([0b4cfd6](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/0b4cfd6522dcad0eb418f0badd0f7824a1efd534))
+
+
+### Refactor
+
+* move embeddings code from AbstractGraph to RAGNode ([a94ebcd](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/a94ebcde0078d66d33e67f7e0a87850efb92d408))
+* reuse code for common interface models ([bb73d91](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/bb73d916a1a7b378438038ec928eeda6d8f6ac9d))
+
+## [1.11.0-beta.6](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.11.0-beta.5...v1.11.0-beta.6) (2024-07-31)
+
+
+### Features
+
+* intregration of firebase ([4caed54](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/4caed545e5030460b2d5e46f9ad90546ce36f0ee))
+
+## [1.11.0-beta.5](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.11.0-beta.4...v1.11.0-beta.5) (2024-07-30)
+
+
+### Features
+
+* fix tests ([1db164e](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/1db164e9e682eefbc1414989a043fefa2e9009c2))
+
+
+### chore
+
+* remove unused import ([88710f1](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/88710f1a7c7d50f57108456112da30d1a12a1ba1))
+
+
+### Refactor
+
+* **Ollama:** integrate new LangChain chat init ([d177afb](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/d177afb68be036465ede1f567d2562b145d77d36))
+* **OpenAI:** integrate new LangChain chat init ([5e3eb6e](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/5e3eb6e43df4bd4c452d34b49f254235e9ff1b22))
+* remove LangChain wrappers ([2c5f934](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/2c5f934f101e319ec4e61009d4c464ca4626c1ff))
+* remove LangChain wrappers for Ollama ([25066b2](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/25066b2bc51517e50058231664230b8edef365b9))
+* remove redundant LangChain wrappers ([9275486](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/927548624034b3c30eca60011d216720102d1815))
+* remove redundant wrappers for Ernie and Nvidia ([bc2c996](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/bc2c9967d2f13ade6eeb7b23e9b423f6e79aa890))
+
+## [1.11.0-beta.4](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.11.0-beta.3...v1.11.0-beta.4) (2024-07-25)
+
+
+### Features
+
+* add generate_answer node paralellization ([0c4b290](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/0c4b2908d98efbb2b0a6faf68618a801d726bb5f))
+
+
+### chore
+
+* rebuild requirements ([2edad66](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/2edad66788cbd92f197e3b37db13c44bfa39e36a))
+
+## [1.11.0-beta.3](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.11.0-beta.2...v1.11.0-beta.3) (2024-07-25)
+
+
+### Bug Fixes
+
+* add llama 3.1 ([f336c95](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/f336c95c2d1833d1f829d61ae7fa415ac2caf250))
+
+## [1.11.0-beta.2](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.11.0-beta.1...v1.11.0-beta.2) (2024-07-24)
+
+
+### Features
+
+* pdate models_tokens.py ([377d679](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/377d679eecd62611c0c9a3cba8202c6f0719ed31))
+
+## [1.11.0-beta.1](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.10.4...v1.11.0-beta.1) (2024-07-23)
 
 
 ### Features
